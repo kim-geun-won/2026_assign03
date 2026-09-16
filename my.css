@@ -1,0 +1,68 @@
+/* ===== 공통 레이아웃 ===== */
+body {
+  background-color: #f8f9fa;
+  font-family: "Malgun Gothic", sans-serif;
+}
+
+/* ===== Navigation ===== */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* ===== Card ===== */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Table ===== */
+.table th {
+  background-color: #f1f3f5;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+/* ===== Form / Input / Select ===== */
+.form-label {
+  font-weight: 600;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* ===== Button ===== */
+.btn {
+  border-radius: 6px;
+}
+
+/* ===== 반응형 (RWD): 화면이 좁아지면 적용 ===== */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+
+  .table {
+    font-size: 0.85rem;
+  }
+}

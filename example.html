@@ -13,8 +13,15 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-md-7 py-4">
-            <h4 class="text-white">도서관리 서비스</h4>
-            <p class="text-body-secondary">이 페이지는 Bootstrap Album 예제를 따라 만든 연습용 페이지입니다.</p>
+            <h4 class="text-white">소개</h4>
+            <p class="text-body-secondary">이 페이지는 제가 보유한 도서들을 모아둔 앨범 형태의 연습용 페이지입니다. Bootstrap의 Album 예제 구조를 참고해서 만들었습니다.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">연락처</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">GitHub 프로필 보기</a></li>
+              <li><a href="#" class="text-white">이메일 보내기</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -37,6 +44,10 @@
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-light">도서 목록</h1>
           <p class="lead text-body-secondary">여기에 등록된 도서들을 카드 형태로 보여줍니다. 실제 CRUD 서비스에서는 이 데이터를 List Page로 확장할 예정입니다.</p>
+          <p>
+            <a href="index.html" class="btn btn-primary my-2">도서 목록으로 이동</a>
+            <a href="add.html" class="btn btn-outline-secondary my-2">도서 추가하기</a>
+          </p>
         </div>
       </div>
     </section>
@@ -49,12 +60,13 @@
             <div class="card shadow-sm">
               <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Book cover" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">도서 이미지</text></svg>
               <div class="card-body">
-                <p class="card-text">책 제목 예시 1</p>
+                <p class="card-text">클린 코드 - 로버트 마틴 저. 소프트웨어 개발자라면 한 번쯤 읽어봐야 할 필독서로 알려져 있습니다.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">보기</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='view.html'">보기</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='edit.html'">수정</button>
                   </div>
-                  <small class="text-body-secondary">2023</small>
+                  <small class="text-body-secondary">2013</small>
                 </div>
               </div>
             </div>
@@ -64,12 +76,13 @@
             <div class="card shadow-sm">
               <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Book cover" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">도서 이미지</text></svg>
               <div class="card-body">
-                <p class="card-text">책 제목 예시 2</p>
+                <p class="card-text">사피엔스 - 유발 하라리 저. 인류의 역사를 통찰력 있게 풀어낸 베스트셀러입니다.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">보기</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='view.html'">보기</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='edit.html'">수정</button>
                   </div>
-                  <small class="text-body-secondary">2024</small>
+                  <small class="text-body-secondary">2015</small>
                 </div>
               </div>
             </div>
@@ -79,12 +92,13 @@
             <div class="card shadow-sm">
               <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Book cover" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">도서 이미지</text></svg>
               <div class="card-body">
-                <p class="card-text">책 제목 예시 3</p>
+                <p class="card-text">1984 - 조지 오웰 저. 전체주의 사회를 그린 고전 디스토피아 소설입니다.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">보기</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='view.html'">보기</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='edit.html'">수정</button>
                   </div>
-                  <small class="text-body-secondary">2022</small>
+                  <small class="text-body-secondary">1949</small>
                 </div>
               </div>
             </div>
@@ -99,6 +113,7 @@
     <div class="container">
       <p class="float-end mb-1"><a href="#">맨 위로</a></p>
       <p class="mb-1">2026 오픈소스 스튜디오 - 22100072 김근원</p>
+      <p class="mb-0">본 페이지는 Bootstrap Album 예제를 참고하여 제작되었습니다.</p>
     </div>
   </footer>
 
